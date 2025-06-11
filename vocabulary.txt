@@ -1,0 +1,518 @@
+100
+1000
+110
+120
+130
+140
+150
+160
+170
+180
+190
+200
+210
+220
+230
+240
+250
+260
+270
+280
+290
+30
+300
+320
+330
+350
+360
+370
+40
+400
+450
+50
+500
+550
+60
+600
+70
+80
+90
+acute hairpin left
+acute hairpin right
+and acute hairpin left
+and acute hairpin right
+and bad bump
+and big crest
+and big jump
+and bridge
+and bump
+and bumps
+and crest
+and dip
+and early four right
+and early one left
+and early six right
+and early slight right
+and early square right
+and early three left
+and early three right
+and early two left
+and early two left unseen
+and early two right
+and five left
+and five left sharp
+and five left unseen
+and five right
+and five right sharp
+and four left
+and four left sharp
+and four left unseen
+and four right
+and four right sharp
+and hairpin left
+and hairpin right
+and jump
+and late five left
+and late five right
+and late four left
+and late four right
+and late four right unseen
+and late hairpin left
+and late hairpin right
+and late one left
+and late one right
+and late open hairpin left
+and late open hairpin right
+and late six left
+and late six right
+and late square left
+and late square right
+and late three left
+and late three right
+and late two left
+and late two right
+and left
+and one left
+and one left sharp
+and one left unseen
+and one right
+and one right sharp
+and one right unseen
+and open hairpin left
+and open hairpin right
+and opens
+and right
+and six left
+and six left sharp
+and six right
+and six right sharp
+and slight left
+and slight right
+and small crest
+and small jump
+and square left
+and square right
+and square right sharp
+and sudden five right
+and sudden hairpin left
+and sudden hairpin right
+and sudden one left
+and sudden one right
+and sudden six right
+and sudden square left
+and sudden square left sharp
+and sudden square right
+and sudden three left
+and sudden three right
+and sudden two left
+and sudden two right
+and three left
+and three left sharp
+and three left unseen
+and three right
+and three right sharp
+and tightens
+and turn acute hairpin left
+and turn acute hairpin right
+and turn five left
+and turn five right
+and turn four left
+and turn hairpin left
+and turn hairpin right
+and turn one left
+and turn one left unseen
+and turn one right
+and turn open hairpin right
+and turn six left
+and turn six right
+and turn square left
+and turn square right
+and turn square right unseen
+and turn three left
+and turn three right
+and turn two left
+and turn two right
+and turn two right sharp
+and two left
+and two left sharp
+and two right
+and two right sharp
+around bale
+around bales
+around roundabout
+around sign
+around tree
+at bush
+at fence
+at house
+at junction
+at tree
+bad bump
+bad dip
+bale
+big crest
+big jump
+brake
+bridge
+bump
+bumps
+bumpy
+care
+caution
+crest
+cut
+dip
+don't cut
+double caution
+dry now
+early five left
+early five right
+early four left
+early four right
+early one left
+early one right
+early one right unseen
+early six left
+early six right
+early square left
+early three left
+early three right
+early two left
+early two right
+extra long
+finish
+five left
+five left sharp
+five left unseen
+five right
+five right sharp
+four left
+four left sharp
+four left unseen
+four right
+four right sharp
+four right unseen
+good luck
+gravel
+hairpin left
+hairpin left unseen
+hairpin right
+half long
+hold
+ice now
+into big crest
+into bridge
+into bump
+into bumps
+into crest
+into dip
+into early five left
+into early four left
+into early one left
+into early six right
+into early square right
+into early three left
+into early three right
+into early two left
+into early two right
+into five left
+into five left sharp
+into five right
+into five right sharp
+into four left
+into four left sharp
+into four right
+into four right sharp
+into hairpin left
+into hairpin right
+into jump
+into late five left
+into late five right
+into late four left
+into late four right
+into late hairpin left
+into late hairpin right
+into late one left
+into late one right
+into late six left
+into late six right
+into late square left
+into late square right
+into late three left
+into late three right
+into late two left
+into late two right
+into left
+into one left
+into one left sharp
+into one right
+into open hairpin left
+into open hairpin right
+into right
+into six left
+into six left sharp
+into six right
+into six right sharp
+into slight left
+into slight right
+into small crest
+into small jump
+into square left
+into square right
+into square right unseen
+into stop
+into sudden five left
+into sudden five right
+into sudden four left
+into sudden four right
+into sudden hairpin left
+into sudden hairpin right
+into sudden one left
+into sudden one right
+into sudden six left
+into sudden six right
+into sudden slight right
+into sudden three left
+into sudden three right
+into sudden two left
+into sudden two right
+into sudden two right unseen
+into three left
+into three left sharp
+into three right
+into three right sharp
+into turn acute hairpin left
+into turn acute hairpin right
+into turn five right
+into turn four right
+into turn hairpin left
+into turn hairpin right
+into turn one left
+into turn one right
+into turn open hairpin right
+into turn square left
+into turn square right
+into turn three right
+into turn two left
+into turn two right
+into two left
+into two left sharp
+into two right
+into two right sharp
+jump
+jumps
+junction
+keep in
+late acute hairpin left
+late five left
+late five right
+late four left
+late four right
+late hairpin left
+late hairpin right
+late one left
+late one left unseen
+late one right
+late open hairpin left
+late open hairpin right
+late six left
+late six right
+late slight left
+late slight right
+late square left
+late square right
+late three left
+late three left sharp
+late three right
+late two left
+late two right
+late two right sharp
+left
+left entry chicane
+logs inside
+logs outside
+long
+narrows
+neat
+negative camber
+one left
+one left sharp
+one left unseen
+one right
+one right sharp
+onto cobbles
+onto gravel
+onto tarmac
+open hairpin left
+open hairpin right
+opens
+over big crest
+over big jump
+over bridge
+over bump
+over bumps
+over crest
+over finish
+over jump
+over jumps
+over small crest
+over small jump
+past junction
+patchy now
+post outside
+right
+right entry chicane
+rock inside
+rock outside
+rough
+short
+six left
+six left sharp
+six right
+six right sharp
+slight left
+slight right
+slowing
+small crest
+small jump
+square left
+square left sharp
+square left unseen
+square right
+square right sharp
+square right unseen
+start
+starts
+stump inside
+sudden acute hairpin left
+sudden five left
+sudden five right
+sudden four left
+sudden four right
+sudden hairpin left
+sudden hairpin right
+sudden one left
+sudden one right
+sudden six left
+sudden six right
+sudden slight left
+sudden slight right
+sudden square left
+sudden square right
+sudden three left
+sudden three right
+sudden two left
+sudden two left unseen
+sudden two right
+three left
+three left sharp
+three left unseen
+three right
+three right sharp
+three right unseen
+through dip
+through gate
+through junction
+through posts
+through tunnel
+tightens
+to stop
+triple caution
+turn acute hairpin left
+turn acute hairpin left unseen
+turn acute hairpin right
+turn early square right
+turn five left
+turn five right
+turn four left
+turn four right
+turn hairpin left
+turn hairpin left unseen
+turn hairpin right
+turn hairpin right unseen
+turn late acute hairpin right
+turn late hairpin left
+turn late hairpin right
+turn late one left
+turn late one left unseen
+turn late square left
+turn late square right
+turn late three right
+turn one left
+turn one left sharp
+turn one left unseen
+turn one right
+turn one right sharp
+turn one right unseen
+turn open hairpin left
+turn open hairpin right
+turn six left
+turn six right
+turn slight left
+turn slight right
+turn square left
+turn square left sharp
+turn square left unseen
+turn square right
+turn square right sharp
+turn square right unseen
+turn three left
+turn three left sharp
+turn three right
+turn two left
+turn two left sharp
+turn two left unseen
+turn two right
+turn two right sharp
+turn unseen one left
+twisty
+two left
+two left sharp
+two left unseen
+two right
+two right sharp
+two right unseen
+unseen acute hairpin left
+unseen five left
+unseen five right
+unseen four left
+unseen four right
+unseen hairpin left
+unseen late three left
+unseen one left
+unseen one right
+unseen open hairpin left
+unseen six left
+unseen six right
+unseen square left
+unseen three left
+unseen three right
+unseen three right sharp
+unseen two left
+unseen two right
+unseen two right sharp
+very long
+wall inside
+wall outside
+water splash
+widens
