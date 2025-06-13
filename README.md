@@ -1,6 +1,8 @@
 # Welcome to zendrive
 
-This is a custom mod for EA Sports WRC to let you edit the pacenotes as well as run custom co-drivers. The game exposes just enough telmetry information to make this work but we don't have any way to impact the base game itself. As a result in order to get editable pacenotes we also need to implement our own co-driver and capture the base game notes. The game currently ships with notes for all 264 stages that are intended to align with the games default notes. However due to the manual process and tremendous amount of work required I'm sure there are inaccuracies, please create an issue for any problems you see so we can integrate the fixes for everyone's benefit.
+This is a custom mod for EA Sports WRC to let you edit the pacenotes as well as run custom co-drivers. The game exposes just enough telemetry information to make this work but we don't have any way to impact the base game itself. As a result in order to get editable pacenotes we also need to implement our own co-driver and capture the base game notes. The mod currently ships with notes for all 264 stages that are intended to align with the games default notes. However due to the manual process and tremendous amount of work required I'm sure there are inaccuracies, please create an issue for any problems you see so we can integrate the fixes for everyone's benefit.
+
+[![Video preview of the pacenote mod in action](https://img.youtube.com/vi/G3aY9JkA0p4/0.jpg)](https://www.youtube.com/watch?v=G3aY9JkA0p4)
 
 ## Setup
 
