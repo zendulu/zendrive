@@ -1,5 +1,5 @@
 [
-  [0, ["90", "square left"]],
+  [0, ["starts", "90", "square left", "good luck"]],
   [91, ["turn square left", "don't cut"]],
   [128, ["and slight right"]],
   [198, ["into slight left", "over crest", "long"]],

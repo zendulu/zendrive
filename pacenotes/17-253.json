@@ -1,5 +1,5 @@
 [
-  [0, ["slight right", "40"]],
+  [0, ["starts", "slight right", "40", "good luck"]],
   [16, ["slight right", "40", "over bumps"]],
   [64, ["ice now"], {"winter": true}],
   [106, ["six left", "100"]],
