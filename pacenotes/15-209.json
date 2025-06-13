@@ -1,5 +1,5 @@
 [
-  [0, ["140", "opens", "hairpin left"]],
+  [0, ["starts", "140", "opens", "hairpin left", "good luck"]],
   [11, ["140"]],
   [155, ["turn open hairpin left", "30"]],
   [208, ["slight left", "50"]],

@@ -1,5 +1,5 @@
 [
-  [0, ["right", "100"]],
+  [0, ["starts", "right", "100", "good luck"]],
   [22, ["slight right", "caution", "100"]],
   [169, ["six left", "short", "past junction", "30"]],
   [218, ["short", "five right"]],

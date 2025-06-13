@@ -1,4 +1,5 @@
 [
+  [0, ["starts", "one left", "one right", "good luck"]],
   [4, ["40"]],
   [49, ["one left", "opens", "50"]],
   [136, ["one right sharp", "slowing", "70"]],

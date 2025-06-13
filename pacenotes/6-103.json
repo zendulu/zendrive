@@ -1,4 +1,5 @@
 [
+  [0, ["starts", "hairpin left", "good luck"]],
   [38, ["and turn hairpin left"]],
   [89, ["and two right"]],
   [127, ["and one left", "opens", "30"]],
