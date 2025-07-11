@@ -1,5 +1,5 @@
 [
-  [0, ["starts", "left", "120", "good luck"]],
+  [0, ["left", "120"]],
   [9, ["slight left", "slowing", "120"]],
   [188, ["three right", "half long", "tightens", "50"]],
   [318, ["two right", "cut", "opens", "50"]],

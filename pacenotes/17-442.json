@@ -1,5 +1,5 @@
 [
-  [0, ["starts", "four right", "and turn five left", "good luck"]],
+  [0, ["four right", "and turn five left"]],
   [39, ["four right"]],
   [84, ["and turn five left", "40"]],
   [148, ["six right", "50"]],
