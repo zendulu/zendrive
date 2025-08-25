@@ -6,9 +6,16 @@ This is a custom mod for EA Sports WRC to let you edit the pacenotes as well as 
 
 ## Setup
 
-## UDP configuration
+### UDP Configuration
 
-In `%homedrive%%homepath%\Documents\My Games\WRC\telemetry\udp` copy [wrc_zen.json](./wrc_zen.json) from this directory. Then make a copy of `%homedrive%%homepath%\Documents\My Games\WRC\telemetry\config.json` to make sure you have a backup in case you mess something up. After you've made a backup edit that `config.json` file we will need to add a section to the packets data structure of that file.
+You should only need to do this UDP setup the first time you use the mod. Once UDP is configured and working you only need to double click the executable to have the mod running. 
+
+1. Download the zip in the releases section. Currently [v0.1.1-beta](https://github.com/zendulu/zendrive/releases/tag/v0.1.1-beta) is the latest release.
+2. Extract the zip file.
+3. Copy `wrc_zen.json` from the extracted files to `Documents\My Games\WRC\telemetry\udp`
+4. Go up one directory to `Documents\My Games\WRC\telemetry`
+5. Make a backup copy of `config.json`
+6. Edit config.json to add the following section to the packets data structure of that file. Note that the last comma chould be omitted if you add this as the last entry. 
 
 The following is what we need to add:
 ```json
