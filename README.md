@@ -42,13 +42,11 @@ You can press the 's' key to change the season. Note that this is necessary as t
 
 #### Codriver
 
-**Default**: "John"
-
 You can change your codriver at any time by pressing the 'c' key. The mod will automatically scan the codrivers directory at startup so add your own co-drivers do this directory.
 
 #### Note timing
 
-**Default**: 6s
+**Default**: 4s
 
 Notes are triggered based on stage progress and are attempted to be queued approximately X seconds before you arrive to the marked location in the notes. Note that timing is approximate based on the vehicle's current speed and will obviously vary from the intended timing if the car is accelarating or braking rapidly. The left and right arrow keys will adjust the timing in 0.250 second increments. The default is 6s and will need to be adjusted to your preference.
 
@@ -100,6 +98,11 @@ Review [./vocabulary.txt](vocabulary.txt) which is the vocabulary of the default
 - "caution burst rear right": called when the rear right bursts.
 - "caution burst front left": called when the front left bursts.
 - "caution burst front right": called when the front right bursts.
+
+In addition to the tire puncture and burst calls there are also dynamic filler samples that you can add. These calls are randomly included at a rate currently 20% and only if the current call queue has fewer than 4 calls waiting to be played. Currently supported are two prefixes:
+
+- pre-filler: possibly called before a note entry
+- post-filler: possibly called after a note entry
 
 ### naming convention
 
