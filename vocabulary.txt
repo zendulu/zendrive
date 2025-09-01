@@ -229,13 +229,20 @@ big cut
 big jump
 brake
 bridge
+brow
 bump
 bumps
 bumpy
 care
 caution
+caution burst front left
+caution burst front right
+caution burst rear left
+caution burst rear right
 crest
 cut
+danger
+deceptive
 dip
 don't cut
 double caution
@@ -278,6 +285,9 @@ four right short
 four right unseen
 good luck
 gravel
+grip inside
+grip middle
+grip outside
 hairpin left
 hairpin left short
 hairpin left unseen
@@ -285,6 +295,7 @@ hairpin right
 hairpin right short
 half long
 hold
+hug
 ice now
 into big crest
 into bridge
@@ -436,6 +447,7 @@ keep left
 keep middle
 keep out
 keep right
+kind
 late acute hairpin left short
 late five left
 late five left long
@@ -488,6 +500,7 @@ left entry chicane
 logs inside
 logs outside
 long
+minus
 narrows
 neat
 negative camber
@@ -526,7 +539,13 @@ over small crest
 over small jump
 past junction
 patchy now
+plus
 post outside
+puncture front left
+puncture front right
+puncture rear left
+puncture rear right
+repeating
 right
 right entry chicane
 rock inside
