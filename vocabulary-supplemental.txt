@@ -1,0 +1,16 @@
+brow
+burst front left
+burst front right
+burst rear left
+burst rear right
+danger
+deceptive
+hug
+kind
+minus
+plus
+puncture front left
+puncture front right
+puncture rear left
+puncture rear right
+repeating

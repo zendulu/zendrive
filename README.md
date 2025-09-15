@@ -95,20 +95,20 @@ The directory `custom_pacenotes` will always be consulted first and any matching
 
 ### vocabulary
 
-Review [./vocabulary.txt](vocabulary.txt) which is the vocabulary of the default pacenotes. Custom co-drivers will need to implement those 518 phrases as a minimum. There are additional system notes that are used for various in game dynamic events those are currently limited to the following calls.
+Review [./vocabulary.txt](vocabulary.txt) which is the vocabulary of the default pacenotes. Custom co-drivers will need to implement those 193 phrases as a minimum; there is an additional set of supplemental calls not used by the default notes and are covered in [./vocabulary-supplemental.txt](vocabulary-supplemental.txt). In addition there are several system notes that are used for various in game dynamic events those are currently limited to the following calls.
 
 - "puncture rear left": called when the rear left receives a puncture.
 - "puncture rear right": called when the rear right receives a puncture.
 - "puncture front left": called when the front left receives a puncture.
 - "puncture front right": called when the front right receives a puncture.
-- "caution burst rear left": called when the rear left bursts.
-- "caution burst rear right": called when the rear right bursts.
-- "caution burst front left": called when the front left bursts.
-- "caution burst front right": called when the front right bursts.
+- "burst rear left": called when the rear left bursts.
+- "burst rear right": called when the rear right bursts.
+- "burst front left": called when the front left bursts.
+- "burst front right": called when the front right bursts.
 - "penalty maybe big reset": called when the vehicle is likely reset and a penalty between 15 and 85 seconds is applied. Note that the game has several issues with vehicle resets, penalties and when the game state is updated so this behavior is approximate.
 - "penalty maybe tire repair": called when called when the vehicle is likely reset and a penalty greater than 85 seconds is applied. Note that the game has several issues with vehicle resets, penalties and when the game state is updated so this behavior is approximate.
 
-When the above penalty times trigger they may also create a scenario where the notes are repeated, if this occurs the codriver will say repeating and then repeat notes for corners not yet reached based on the reset position.
+When the above penalty times trigger they may also create a scenario where the notes are repeated, if this occurs the codriver will say "repeating" and then repeat notes for corners not yet reached based on the reset position.
 
 In addition to the tire puncture and burst calls there are also dynamic filler samples that you can add. These calls are randomly included at a rate currently 20% and only if the current call queue has fewer than 4 calls waiting to be played. Currently supported are two prefixes:
 
