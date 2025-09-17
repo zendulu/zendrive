@@ -152,6 +152,7 @@
   [13071, ["and", "one left", "don't cut"]],
   [13131, ["and", "three right", "half long", "120", "slowing"]],
   [13304, ["late", "square right", "half long", "30"]],
+  [13350, ["don't cut", "sharon stone"], {"easter": true}],
   [13356, ["three left", "don't cut"]],
   [13384, ["into", "five right", "over crest"]],
   [13435, ["and", "slight left", "30"]],

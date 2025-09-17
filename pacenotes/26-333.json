@@ -55,6 +55,7 @@
   [4695, ["into", "two right", "short", "30"]],
   [4743, ["two right", "short"]],
   [4777, ["into", "two left", "sharp", "150"]],
+  [4920, ["johnny dip"], {"easter": true}],
   [4977, ["rough", "bump"]],
   [5024, ["into", "four right", "70"]],
   [5137, ["slight left"]],

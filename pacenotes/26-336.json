@@ -11,6 +11,7 @@
   [546, ["into", "four right"]],
   [572, ["and", "bump", "120", "slowing"]],
   [703, ["big jump", "70"]],
+  [725, ["caution", "chris rock", "keep left"], {"easter": true}],
   [829, ["turn", "square right", "over crest"]],
   [865, ["and", "four right"]],
   [902, ["and", "two left", "short"]],

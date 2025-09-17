@@ -8,6 +8,7 @@
   [561, ["into", "two right", "short", "30"]],
   [609, ["two right", "short"]],
   [643, ["into", "two left", "sharp", "150"]],
+  [770, ["johnny dip"], {"easter": true}],
   [843, ["rough", "bump"]],
   [890, ["into", "four right", "70"]],
   [1003, ["slight left"]],

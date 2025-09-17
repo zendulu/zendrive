@@ -53,6 +53,7 @@
   [4620, ["into dip"]],
   [4641, ["and", "small jump", "100", "slowing"]],
   [4766, ["crest", "60"]],
+  [4800, ["caution", "paul rut", "keep in"], {"easter": true}],
   [4847, ["turn", "square left", "sharp", "around bale", "120"]],
   [4988, ["long", "crest", "180"]],
   [5209, ["bumps", "80"]],

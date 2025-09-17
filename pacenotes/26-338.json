@@ -85,6 +85,7 @@
   [8019, ["four right", "short", "bumpy", "190"]],
   [8260, ["late", "three left", "keep in", "120"]],
   [8426, ["turn", "one right", "rock inside", "600"]],
+  [8920, ["caution", "chris pine"], {"easter": true}],
   [9016, ["caution", "six right", "over crest"]],
   [9059, ["into", "five left", "short", "over bump", "170"]],
   [9257, ["double caution", "turn", "six right"]],
