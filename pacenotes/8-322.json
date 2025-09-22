@@ -54,6 +54,7 @@
   [5034, ["and", "slight left", "long"]],
   [5135, ["into jump", "50"]],
   [5204, ["slight right", "extra long", "130"]],
+  [5430, ["caution", "christian bale"], {"easter": true}],
   [5513, ["caution", "five left", "short", "over jump", "160"]],
   [5691, ["slight left", "over crest"]],
   [5773, ["and", "slight right", "140"]],

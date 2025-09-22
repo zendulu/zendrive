@@ -32,6 +32,7 @@
   [2702, ["slight left", "over big jump", "80"]],
   [2803, ["slight left"]],
   [2862, ["and", "slight right", "over crest", "180"]],
+  [2990, ["christian bale"], {"easter": true}],
   [3083, ["five right", "short", "over big jump", "100"]],
   [3217, ["six left", "opens", "very long", "100"]],
   [3470, ["double caution", "six right", "over big jump", "opens", "long"]],

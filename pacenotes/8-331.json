@@ -36,6 +36,7 @@
   [3199, ["crest", "30"]],
   [3286, ["five left", "opens"]],
   [3401, ["and", "slight left", "over crest", "30"]],
+  [3415, ["caution", "don't cut", "kate bush"], {"easter": true}],
   [3472, ["slight left", "over crest", "130"]],
   [3684, ["small jump"]],
   [3747, ["and", "slight left", "slowing", "90"]],

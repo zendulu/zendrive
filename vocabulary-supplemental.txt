@@ -8,9 +8,19 @@ deceptive
 hug
 kind
 minus
+penalty maybe big reset
+penalty maybe cut
+penalty maybe tire repair
 plus
 puncture front left
 puncture front right
 puncture rear left
 puncture rear right
 repeating
+chris pine
+chris rock
+christian bale
+johnny dip
+kate bush
+paul rut
+sharon stone

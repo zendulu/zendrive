@@ -19,6 +19,7 @@
   [1704, ["turn", "square right", "30"]],
   [1745, ["slight left", "130"]],
   [1906, ["right", "over crest", "160"]],
+  [2030, ["caution", "don't cut", "kate bush"], {"easter": true}],
   [2119, ["six right", "over crest", "70"]],
   [2246, ["right", "over crest"]],
   [2309, ["and", "five right", "opens", "50"]],

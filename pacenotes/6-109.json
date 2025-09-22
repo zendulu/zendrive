@@ -22,6 +22,7 @@
   [1134, ["square right", "don't cut"]],
   [1170, ["into", "one left"]],
   [1201, ["into", "six right", "long"]],
+  [1295, ["caution", "sharon stone"], {"easter": true}],
   [1300, ["and", "three left", "over crest", "tightens"]],
   [1339, ["into", "three right", "don't cut"]],
   [1376, ["and", "square left", "70"]],

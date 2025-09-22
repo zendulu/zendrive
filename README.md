@@ -39,7 +39,13 @@ After you have setup the UDP settings as detailed above, in theory you should be
 
 ### Options
 
-Options are not currently saved so you will need to reset to your preference on each startup of the mod.
+The following options are not currently saved so you will need to reset to your preference on each startup of the mod.
+
+#### Note timing
+
+**Default**: 4s
+
+Notes are triggered based on stage progress and are attempted to be queued approximately X seconds before you arrive to the marked location in the notes. Note that timing is approximate based on the vehicle's current speed and will obviously vary from the intended timing if the car is accelarating or braking rapidly. The left and right arrow keys will adjust the timing in 0.250 second increments. The default is 6s and will need to be adjusted to your preference.
 
 #### Season
 
@@ -47,15 +53,22 @@ Options are not currently saved so you will need to reset to your preference on 
 
 You can press the 's' key to change the season. Note that this is necessary as the game telemetry does not indicate what season it is and Monte stages have calls for ice in winter. You need to set the season to Winter if you are running Monte in winter, or for any custom winter calls you may add in other locations to work properly.
 
+#### Easter
+
+You can enable/disable some additional calls for some stages by pressing the 'e' key..
+
+#### Filler
+
+You can enable/disable pre and post filler calls by pressing the 'f' key.
+
+#### Penalty
+
+You can enable/disable codriver responses to penalties by pressing the 'p' key.
+
 #### Codriver
 
 You can change your codriver at any time by pressing the 'c' key. The mod will automatically scan the codrivers directory at startup so add your own co-drivers do this directory.
 
-#### Note timing
-
-**Default**: 4s
-
-Notes are triggered based on stage progress and are attempted to be queued approximately X seconds before you arrive to the marked location in the notes. Note that timing is approximate based on the vehicle's current speed and will obviously vary from the intended timing if the car is accelarating or braking rapidly. The left and right arrow keys will adjust the timing in 0.250 second increments. The default is 6s and will need to be adjusted to your preference.
 
 ## Editing pace notes
 
@@ -105,12 +118,13 @@ Review [./vocabulary.txt](vocabulary.txt) which is the vocabulary of the default
 - "burst rear right": called when the rear right bursts.
 - "burst front left": called when the front left bursts.
 - "burst front right": called when the front right bursts.
+- "penalty maybe cut": called when a 5-15 second penalty happens.
 - "penalty maybe big reset": called when the vehicle is likely reset and a penalty between 15 and 85 seconds is applied. Note that the game has several issues with vehicle resets, penalties and when the game state is updated so this behavior is approximate.
 - "penalty maybe tire repair": called when called when the vehicle is likely reset and a penalty greater than 85 seconds is applied. Note that the game has several issues with vehicle resets, penalties and when the game state is updated so this behavior is approximate.
 
 When the above penalty times trigger they may also create a scenario where the notes are repeated, if this occurs the codriver will say "repeating" and then repeat notes for corners not yet reached based on the reset position.
 
-In addition to the tire puncture and burst calls there are also dynamic filler samples that you can add. These calls are randomly included at a rate currently 20% and only if the current call queue has fewer than 4 calls waiting to be played. Currently supported are two prefixes:
+In addition to the tire puncture and burst calls there are also dynamic filler samples that you can add. These calls are randomly included at a rate currently 20%. Currently supported are two prefixes:
 
 - pre-filler: possibly called before a note entry
 - post-filler: possibly called after a note entry
