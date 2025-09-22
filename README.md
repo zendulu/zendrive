@@ -10,7 +10,7 @@ This is a custom mod for EA Sports WRC to let you edit the pacenotes as well as 
 
 You should only need to do this UDP setup the first time you use the mod. Once UDP is configured and working you only need to double click the executable to have the mod running. 
 
-1. Download the zip in the releases section. Currently [v0.1.2-beta](https://github.com/zendulu/zendrive/releases/tag/v0.1.2-beta) is the latest release.
+1. Download the zip in the releases section. Currently [v0.1.4-beta](https://github.com/zendulu/zendrive/releases/tag/v0.1.2-beta) is the latest release.
 2. Extract the zip file.
 3. Copy `wrc_zen.json` from the extracted files to `Documents\My Games\WRC\telemetry\udp`
 4. Go up one directory to `Documents\My Games\WRC\telemetry`
