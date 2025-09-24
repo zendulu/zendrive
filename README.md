@@ -93,11 +93,11 @@ Let's take a closer look at the first pace note:
   [16, ["slight right", "40", "over bumps"]],
 ```
 
-What this pacenote does is indicate that when we are approximately 6s (default timing) prior to the 16 meter mark the game will queue the phrases "slight right", "40" and "over bumps". This could have also been written as
+What this pacenote does is indicate that when we are approximately 4s (default timing) prior to the 16 meter mark the game will queue the phrases "slight right", "40" and "over bumps". This could have also been written as
 ```json
   [16, ["slight right 40 over bumps"]],
 ```
-In which case the system would queue the single phrase "slight right 40 over bumps". There are tradeoffs between the two options. The many smaller phrases create more flexbility and allow for more phrase re-use which makes creating new co-drivers less cumbersome. However it can lead to canned or robotic sounding pacenotes as the notes don't necessarily flow from one to the next. I have done my best to find a right balance with the base notes to minimize the amount of calls while also creating some flow. The base notes have 518 unique phrases which is heavily reduced from the approximate 7500 or so calls that would be if the second format was used. Please review `vocabulary.txt` for the list of base note files that are supported.
+In which case the system would queue the single phrase "slight right 40 over bumps". There are tradeoffs between the two options. The many smaller phrases create more flexbility and allow for more phrase re-use which makes creating new co-drivers less cumbersome. However it can lead to canned or robotic sounding pacenotes as the notes don't necessarily flow from one to the next. I have done my best to find a right balance with the base notes to minimize the amount of calls while also creating some flow. The base notes have 193 unique phrases which is heavily reduced from the approximate 7500 or so calls that would be if the second format was used. Please review `vocabulary.txt` for the list of base note files that are supported.
 
 ### Adding your own pacenotes
 
