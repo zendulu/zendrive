@@ -15,10 +15,12 @@ def getPaceNotes(file):
 
 def adjustNotes(pacenotes, offset):
     newNotes = []
-    for note in pacenotes:
+    for i, note in enumerate(pacenotes):
         newDistance = note[0] + offset;
         if newDistance < 0:
             newDistance = 0
+            if i > 0:
+                newDistance = 1
         newNotes.append([newDistance, note[1]])
     return newNotes
 
@@ -34,7 +36,7 @@ def main():
 
         for i, note in enumerate(adjusted):
             comma = ","
-            if i == len(adjusted) - 1:
+            if i == len(adjusted    ) - 1:
                 comma = ""
 
             if len(note) == 3:
