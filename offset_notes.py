@@ -21,7 +21,10 @@ def adjustNotes(pacenotes, offset):
             newDistance = 0
             if i > 0:
                 newDistance = 1
-        newNotes.append([newDistance, note[1]])
+        if len(note) == 3:
+            newNotes.append([newDistance, note[1], note[2]])
+        else:
+            newNotes.append([newDistance, note[1]])
     return newNotes
 
 def main():
