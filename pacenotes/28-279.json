@@ -1,6 +1,6 @@
 [
   [0, ["starts", "40", "six right", "good luck"]],
-  [0, ["40"]],
+  [1, ["40"]],
   [39, ["six right", "half long", "30"]],
   [151, ["four left", "opens", "long", "50"]],
   [293, ["three right", "half long"]],

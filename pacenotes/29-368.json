@@ -1,6 +1,6 @@
 [
   [0, ["starts", "200", "good luck"]],
-  [0, ["200"]],
+  [1, ["200"]],
   [195, ["turn", "one left", "tightens"]],
   [260, ["and", "five right", "30"]],
   [328, ["three right", "over crest", "don't cut", "40"]],

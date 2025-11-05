@@ -1,5 +1,5 @@
 [
-  [10, ["starts", "80", "jump", "good luck"]],
+  [0, ["starts", "80", "jump", "good luck"]],
   [27, ["80"]],
   [83, ["jump", "50"]],
   [164, ["five left", "tightens", "40"]],

@@ -1,6 +1,6 @@
 [
   [0, ["starts", "170", "square right", "good luck"]],
-  [0, ["170"]],
+  [1, ["170"]],
   [228, ["slowing", "turn", "square right", "100"]],
   [329, ["crest", "80"]],
   [431, ["turn", "square right", "200"]],

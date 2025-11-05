@@ -1,6 +1,6 @@
 [
   [0, ["starts", "170", "crest", "good luck"]],
-  [0, ["170", "crest"]],
+  [1, ["170", "crest"]],
   [8, ["170"]],
   [171, ["crest"]],
   [216, ["and", "slight right", "over bump", "80"]],

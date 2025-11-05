@@ -1,5 +1,5 @@
 [
-  [10, ["starts", "130", "good luck"]],
+  [0, ["starts", "130", "good luck"]],
   [45, ["130"]],
   [163, ["turn", "square left"]],
   [202, ["into crest"]],

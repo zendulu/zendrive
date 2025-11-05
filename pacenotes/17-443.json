@@ -1,5 +1,5 @@
 [
-  [35, ["70", "five right"]],
+  [0, ["starts", "70", "five right"]],
   [48, ["70"]],
   [85, ["five right"]],
   [121, ["turn", "one left"]],
