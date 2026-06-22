@@ -74,11 +74,16 @@ early
 extra long
 finish
 five left
+five left sharp
 five right
+five right sharp
 four left
+four left sharp
 four right
+four right sharp
 good luck
 gravel
+handbrake
 hairpin left
 hairpin right
 half long
@@ -113,13 +118,16 @@ narrows
 neat
 negative camber
 one left
+one left sharp
 one right
+one right sharp
 onto cobbles
 onto gravel
 onto tarmac
 open hairpin left
 open hairpin right
 opens
+opens and tightens
 opens five
 opens four
 opens six
@@ -145,9 +153,12 @@ rock inside
 rock outside
 rough
 sharp
+sharp jump
 short
 six left
+six left sharp
 six right
+six right sharp
 slight left
 slight right
 slowing
@@ -155,19 +166,24 @@ small crest
 small cut
 small jump
 square left
+square left sharp
 square right
+square right sharp
 starts
 straight
 stump inside
 sudden
 three left
+three left sharp
 three right
+three right sharp
 through dip
 through gate
 through junction
 through posts
 through tunnel
 tightens
+tightens and opens
 tightens five
 tightens four
 tightens hairpin
@@ -181,10 +197,15 @@ tightens two
 to stop
 triple caution
 turn
+turn early
+turn late
 twisty
 two left
+two left sharp
 two right
+two right sharp
 unseen
+unseen late
 uphill
 very long
 wall inside

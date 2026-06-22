@@ -6,68 +6,156 @@ This is a custom mod for EA Sports WRC to let you edit the pacenotes as well as 
 
 ## Setup
 
-### UDP Configuration
+### WebView2 Runtime (Windows)
 
-You should only need to do this UDP setup the first time you use the mod. Once UDP is configured and working you only need to double click the executable to have the mod running. 
+The new version renders its UI using Microsoft WebView2 — the same engine that powers Microsoft Edge. Most Windows 10/11 machines already have WebView2 installed. If you get an error about a missing runtime when launching Zendrive, install it:
 
-1. Download the zip in the releases section. Currently [v0.1.5-beta](https://github.com/zendulu/zendrive/releases/tag/v0.1.5-beta) is the latest release.
-2. Extract the zip file.
-3. Copy `wrc_zen.json` from the extracted files to `Documents\My Games\WRC\telemetry\udp`
-4. Go up one directory to `Documents\My Games\WRC\telemetry`
-5. Make a backup copy of `config.json`
-6. Edit config.json to add the following section to the packets data structure of that file. Note that the last comma chould be omitted if you add this as the last entry. 
+- **Download:** https://developer.microsoft.com/en-us/microsoft-edge/webview2/
 
-The following is what we need to add:
+If you already use Edge, Chromium, or any modern browser, WebView2 is almost certainly already present.
+
+### EA WRC Telemetry Setup
+
+Zendrive listens for UDP telemetry on `127.0.0.1:20666`. EA WRC's telemetry system uses a custom packet structure file (`wrc_zen.json`) that defines what data is sent.
+
+**Step 1: Install the packet structure**
+
+Copy `wrc_zen.json` from this repo to your game's telemetry udp folder:
+
+```
+wrc_zen.json → Documents/My Games/WRC/telemetry/udp/wrc_zen.json
+```
+
+This file defines all five packet types Zendrive needs:
+- `session_update` — continuous telemetry (speed, position, progress, etc.)
+- `session_start` — fired when a stage begins
+- `session_end` — fired when a stage ends
+- `session_pause` — fired when the game is paused
+- `session_resume` — fired when the game is resumed
+
+**Step 2: Update the game config**
+
+Open `Documents/My Games/WRC/telemetry/config.json` and add these entries to the `udp.packets` array:
+
 ```json
-      {
-        "structure": "wrc_zen",
-        "packet": "session_update",
-        "ip": "127.0.0.1",
-        "port": 20666,
-        "frequencyHz": 120,
-        "bEnabled": true
-      },
+{
+    "structure": "wrc_zen",
+    "packet": "session_start",
+    "ip": "127.0.0.1",
+    "port": 20666,
+    "frequencyHz": 0,
+    "bEnabled": true
+},
+{
+    "structure": "wrc_zen",
+    "packet": "session_end",
+    "ip": "127.0.0.1",
+    "port": 20666,
+    "frequencyHz": 0,
+    "bEnabled": true
+},
+{
+    "structure": "wrc_zen",
+    "packet": "session_pause",
+    "ip": "127.0.0.1",
+    "port": 20666,
+    "frequencyHz": 0,
+    "bEnabled": true
+},
+{
+    "structure": "wrc_zen",
+    "packet": "session_resume",
+    "ip": "127.0.0.1",
+    "port": 20666,
+    "frequencyHz": 0,
+    "bEnabled": true
+},
+{
+    "structure": "wrc_zen",
+    "packet": "session_update",
+    "ip": "127.0.0.1",
+    "port": 20666,
+    "frequencyHz": 120,
+    "bEnabled": true
+}
+```
+
+If you used zendrive prior to 0.2.0 your `config.json` should already have the `session_update` entry so just add the first 4 additional configurations:
+
+```json
+{
+    "structure": "wrc_zen",
+    "packet": "session_update",
+    "ip": "127.0.0.1",
+    "port": 20666,
+    "frequencyHz": 120,
+    "bEnabled": true
+}
 ```
 
 ## Using the mod
 
 ## Running the program.
 
-After you have setup the UDP settings as detailed above, in theory you should be able to double click the executable and as long as it is in the same directory as the codrivers and pacenotes it should be working and look something like the following
+After you have setup the UDP settings as detailed above, in theory you should be able to double click the executable and as long as it is in the same directory as the codrivers and pacenotes it should be working.
 
-![A computer interface for the zendrive mod showing configuration including: Note Timing, Season, and Co-driver settings. Also shown on the right side are status details like the current location, route, distance and app version. At the bottom is a section showing log information.](./screenshot.png)
+### First Launch
+
+After completing the steps above:
+
+1. Launch EA WRC.
+2. Run `zendrive.exe`.
+3. A thin control bar will appear with a visual pace notes display below it. You can resize this but the drag handles are difficult to see. Double clicking the header will set it to full screen width you can then move it to wherever you like. Note that there is a known interaction issue with the header not allowing click through on areas where it is not visible. I've made the menu as unobstructive as possible visually but it does take up the full width and does not allow clickthrough as such it may create a scenario where the UI appears like you can click interfaces below the window.
+4. Click the hamburger menu () to access settings that were previously keyboard shortcuts (season, co-driver, timing, etc.).
+5. Drag the control bar to reposition the entire app.
 
 ### Options
 
 The following options are not currently saved so you will need to reset to your preference on each startup of the mod.
 
+#### Codriver
+
+You can change your codriver the mod will automatically scan the codrivers directory at startup so add your own co-drivers do this directory.
+
 #### Note timing
 
 **Default**: 4s
 
-Notes are triggered based on stage progress and are attempted to be queued approximately X seconds before you arrive to the marked location in the notes. Note that timing is approximate based on the vehicle's current speed and will obviously vary from the intended timing if the car is accelarating or braking rapidly. The left and right arrow keys will adjust the timing in 0.250 second increments. The default is 6s and will need to be adjusted to your preference.
+Notes are triggered based on stage progress and are attempted to be queued approximately X seconds before you arrive to the marked location in the notes. Note that timing is approximate based on the vehicle's current speed and will obviously vary from the intended timing if the car is accelarating or braking rapidly. The `-` and `+` buttons will adjust the timing in 0.250 second increments. The default is 6s and will need to be adjusted to your preference.
 
 #### Season
 
 **Default**: "Normal"
 
-You can press the 's' key to change the season. Note that this is necessary as the game telemetry does not indicate what season it is and Monte stages have calls for ice in winter. You need to set the season to Winter if you are running Monte in winter, or for any custom winter calls you may add in other locations to work properly.
+Note that this is necessary as the game telemetry does not indicate what season it is and Monte stages have calls for ice in winter. You need to set the season to Winter if you are running Monte in winter, or for any custom winter calls you may add in other locations to work properly.
 
 #### Easter
 
-You can enable/disable some additional calls for some stages by pressing the 'e' key..
+You can enable/disable some additional calls by adjusting this setting.
 
 #### Filler
 
-You can enable/disable pre and post filler calls by pressing the 'f' key.
+You can enable/disable pre and post filler calls by adjusting this setting. These are random sounds that play in between pacenotes. These are only present on Beavis and Butthead.
 
 #### Penalty
 
-You can enable/disable codriver responses to penalties by pressing the 'p' key.
+You can enable/disable codriver responses to penalties.
 
-#### Codriver
+#### Icon
 
-You can change your codriver at any time by pressing the 'c' key. The mod will automatically scan the codrivers directory at startup so add your own co-drivers do this directory.
+You can adjust the visual pacenote display size. `small`, `medium`, or `large`
+
+#### Always On Top
+
+This adjusts how the window displays if you don't want visual pacenotes and want just the audio you may prefer this off.
+
+#### Stage Info
+
+Toggles whether or not the current location and stage (left side) as well as current stage distance and total stage distance (right) render.
+
+#### Pace Notes
+
+This enables/disables the visual pacenotes.
 
 
 ## Editing pace notes

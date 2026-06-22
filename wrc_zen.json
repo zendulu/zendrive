@@ -52,6 +52,42 @@
 				"route_id",
 				"vehicle_cluster_abs"
 			]
+		},
+		{
+			"id": "session_start",
+			"channels": [
+				"packet_4cc",
+				"packet_uid",
+				"location_id",
+				"route_id"
+			]
+		},
+		{
+			"id": "session_end",
+			"channels": [
+				"packet_4cc",
+				"packet_uid",
+				"stage_current_time",
+				"stage_current_distance"
+			]
+		},
+		{
+			"id": "session_pause",
+			"channels": [
+				"packet_4cc",
+				"packet_uid",
+				"stage_current_time",
+				"stage_current_distance"
+			]
+		},
+		{
+			"id": "session_resume",
+			"channels": [
+				"packet_4cc",
+				"packet_uid",
+				"stage_current_time",
+				"stage_current_distance"
+			]
 		}
 	]
 }
