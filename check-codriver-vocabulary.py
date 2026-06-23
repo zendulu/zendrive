@@ -1,7 +1,9 @@
 import os
+import re
 import sys
 
 PHRASE_THRESHOLD = 2
+SANITIZE_RE = re.compile(r'[^a-z0-9 -]')
 RED = "\033[31m"
 RESET = "\033[0m"
 
@@ -24,10 +26,16 @@ def get_codrivers():
     codriver_dir = './codrivers'
     return [os.path.join(codriver_dir, d) for d in os.listdir(codriver_dir) if os.path.isdir(os.path.join(codriver_dir, d))]
 
+def sanitize_phrase(phrase):
+    name = phrase.lower()
+    name = SANITIZE_RE.sub("", name)
+    return name.strip()
+
+
 def get_file_phrase(filename):
     parts = filename.split("-")
     phrase = parts[0].strip()
-    return phrase
+    return sanitize_phrase(phrase)
 
 
 def check_codriver(codriver_dir, vocabulary):
@@ -45,10 +53,11 @@ def check_codriver(codriver_dir, vocabulary):
         phrase_count[phrase] += 1
 
     for phrase in vocabulary:
-        if phrase not in phrase_count or phrase_count[phrase] < PHRASE_THRESHOLD:
+        sanitized = sanitize_phrase(phrase)
+        if sanitized not in phrase_count or phrase_count[sanitized] < PHRASE_THRESHOLD:
             count = 0
-            if phrase in phrase_count:
-                count = phrase_count[phrase]
+            if sanitized in phrase_count:
+                count = phrase_count[sanitized]
             deficient += 1
             if count == 0:
                 missing += 1
