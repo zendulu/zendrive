@@ -25,6 +25,7 @@ Copy `wrc_zen.json` from this repo to your game's telemetry udp folder:
 ```
 wrc_zen.json → Documents/My Games/WRC/telemetry/udp/wrc_zen.json
 ```
+*(Note: If you use OneDrive, your path may be `OneDrive/Documents/My Games/WRC/...`)*
 
 This file defines all five packet types Zendrive needs:
 - `session_update` — continuous telemetry (speed, position, progress, etc.)
@@ -35,79 +36,115 @@ This file defines all five packet types Zendrive needs:
 
 **Step 2: Update the game config**
 
-Open `Documents/My Games/WRC/telemetry/config.json` and add these entries to the `udp.packets` array:
+Open `Documents/My Games/WRC/telemetry/config.json` in a text editor (like Notepad or VS Code).
 
+**⚠️ Backup first:** Before making any changes, create a copy of the file (e.g., make a copy to `config.json.bak`). If the game fails to launch or telemetry stops working, you can simply delete the broken file and rename the backup back to `config.json`.
+
+You need to add the Zendrive configurations into the `udp.packets` array. **Do not replace the entire file**; simply add the `wrc_zen` entries alongside your existing configurations.
+
+**⚠️ Important:** JSON is very strict. Ensure every block is separated by a comma, but **do not** put a comma after the very last block in the array.
+
+**Example of the change:**
+
+*Before:*
 ```json
 {
-    "structure": "wrc_zen",
-    "packet": "session_start",
-    "ip": "127.0.0.1",
-    "port": 20666,
-    "frequencyHz": 0,
-    "bEnabled": true
-},
-{
-    "structure": "wrc_zen",
-    "packet": "session_end",
-    "ip": "127.0.0.1",
-    "port": 20666,
-    "frequencyHz": 0,
-    "bEnabled": true
-},
-{
-    "structure": "wrc_zen",
-    "packet": "session_pause",
-    "ip": "127.0.0.1",
-    "port": 20666,
-    "frequencyHz": 0,
-    "bEnabled": true
-},
-{
-    "structure": "wrc_zen",
-    "packet": "session_resume",
-    "ip": "127.0.0.1",
-    "port": 20666,
-    "frequencyHz": 0,
-    "bEnabled": true
-},
-{
-    "structure": "wrc_zen",
-    "packet": "session_update",
-    "ip": "127.0.0.1",
-    "port": 20666,
-    "frequencyHz": 120,
-    "bEnabled": true
+    "schema": 2,
+    "udp": {
+        "packets": [
+            {
+                "structure": "some_other_mod",
+                "packet": "session_update",
+                "ip": "127.0.0.1",
+                "port": 12345,
+                "frequencyHz": 60,
+                "bEnabled": true
+            }
+        ]
+    }
 }
 ```
 
-If you used zendrive prior to 0.2.0 your `config.json` should already have the `session_update` entry so just add the first 4 additional configurations:
-
+*After (adding wrc_zen entries):*
 ```json
 {
-    "structure": "wrc_zen",
-    "packet": "session_update",
-    "ip": "127.0.0.1",
-    "port": 20666,
-    "frequencyHz": 120,
-    "bEnabled": true
+    "schema": 2,
+    "udp": {
+        "packets": [
+            {
+                "structure": "some_other_mod",
+                "packet": "session_update",
+                "ip": "127.0.0.1",
+                "port": 12345,
+                "frequencyHz": 60,
+                "bEnabled": true
+            },
+            {
+                "structure": "wrc_zen",
+                "packet": "session_start",
+                "ip": "127.0.0.1",
+                "port": 20666,
+                "frequencyHz": 0,
+                "bEnabled": true
+            },
+            {
+                "structure": "wrc_zen",
+                "packet": "session_end",
+                "ip": "127.0.0.1",
+                "port": 20666,
+                "frequencyHz": 0,
+                "bEnabled": true
+            },
+            {
+                "structure": "wrc_zen",
+                "packet": "session_pause",
+                "ip": "127.0.0.1",
+                "port": 20666,
+                "frequencyHz": 0,
+                "bEnabled": true
+            },
+            {
+                "structure": "wrc_zen",
+                "packet": "session_resume",
+                "ip": "127.0.0.1",
+                "port": 20666,
+                "frequencyHz": 0,
+                "bEnabled": true
+            },
+            {
+                "structure": "wrc_zen",
+                "packet": "session_update",
+                "ip": "127.0.0.1",
+                "port": 20666,
+                "frequencyHz": 120,
+                "bEnabled": true
+            }
+        ]
+    }
 }
 ```
+
+
+If you used zendrive prior to 0.2.0 your `config.json` should already have the `session_update` entry so just add the first 4 additional configurations.
+
 
 ## Using the mod
 
-## Running the program.
+### Quick Start
+1. Launch **EA WRC**.
+2. Run `zendrive.exe`.
+3. Position the UI on your screen.
 
-After you have setup the UDP settings as detailed above, in theory you should be able to double click the executable and as long as it is in the same directory as the codrivers and pacenotes it should be working.
+**Note:** When running `zendrive.exe` for the first time, Windows may show a "Windows protected your PC" warning. Click **"More info"** and then **"Run anyway"**.
 
 ### First Launch
-
 After completing the steps above:
-
 1. Launch EA WRC.
 2. Run `zendrive.exe`.
 3. A thin control bar will appear with a visual pace notes display below it. You can resize this but the drag handles are difficult to see. Double clicking the header will set it to full screen width you can then move it to wherever you like. Note that there is a known interaction issue with the header not allowing click through on areas where it is not visible. I've made the menu as unobstructive as possible visually but it does take up the full width and does not allow clickthrough as such it may create a scenario where the UI appears like you can click interfaces below the window.
-4. Click the hamburger menu () to access settings that were previously keyboard shortcuts (season, co-driver, timing, etc.).
+4. Click the hamburger menu (☰) to access settings that were previously keyboard shortcuts (season, co-driver, timing, etc.).
 5. Drag the control bar to reposition the entire app.
+
 
 ### Options
 
@@ -158,81 +195,10 @@ Toggles whether or not the current location and stage (left side) as well as cur
 This enables/disables the visual pacenotes.
 
 
-## Editing pace notes
+## Customization
 
-Pacenote files are in a json format. You must ensure that your pacenotes are valid json. Use one of the many online JSON validators if you are unfamilar with the format to ensure your edits are valid JSON. As a helpful hint every pacenote line should end with a ',' except for the last pacenote in a file.
+Want to tweak the notes or add your own co-driver? Check out the [Customization Guide](CUSTOMIZATION.md) for a detailed walkthrough on editing JSON pacenotes and creating audio packs.
 
-### Anatomy of a pacenote
-
-Each pacenote consists of a distance, a series of phrases, and an optional conditional rule which currently only allows for a "winter" conditional.
-
-An example excerpt is as follows:
-
-```json
-  [16, ["slight right", "40", "over bumps"]],
-  [64, ["ice now"], {"winter": true}],
-  [106, ["six left", "100"]],
-  [258, ["five left"]],
-  [327, ["and four right", "short", "100"]],
-```
-
-Let's take a closer look at the first pace note:
-```json
-  [16, ["slight right", "40", "over bumps"]],
-```
-
-What this pacenote does is indicate that when we are approximately 4s (default timing) prior to the 16 meter mark the game will queue the phrases "slight right", "40" and "over bumps". This could have also been written as
-```json
-  [16, ["slight right 40 over bumps"]],
-```
-In which case the system would queue the single phrase "slight right 40 over bumps". There are tradeoffs between the two options. The many smaller phrases create more flexbility and allow for more phrase re-use which makes creating new co-drivers less cumbersome. However it can lead to canned or robotic sounding pacenotes as the notes don't necessarily flow from one to the next. I have done my best to find a right balance with the base notes to minimize the amount of calls while also creating some flow. The base notes have 193 unique phrases which is heavily reduced from the approximate 7500 or so calls that would be if the second format was used. Please review `vocabulary.txt` for the list of base note files that are supported.
-
-### Adding your own pacenotes
-
-The directory `custom_pacenotes` will always be consulted first and any matching notes for the current stage will be prioritized over the default pacenotes found in the `pacenotes` directory. You can either create your own notes from scratch or copy the existing notes into the `custom_pacenotes` directory and edit as prefer.
-
-
-## Adding co-drivers
-
-### vocabulary
-
-Review [./vocabulary.txt](vocabulary.txt) which is the vocabulary of the default pacenotes. Custom co-drivers will need to implement those 193 phrases as a minimum; there is an additional set of supplemental calls not used by the default notes and are covered in [./vocabulary-supplemental.txt](vocabulary-supplemental.txt). In addition there are several system notes that are used for various in game dynamic events those are currently limited to the following calls.
-
-- "puncture rear left": called when the rear left receives a puncture.
-- "puncture rear right": called when the rear right receives a puncture.
-- "puncture front left": called when the front left receives a puncture.
-- "puncture front right": called when the front right receives a puncture.
-- "burst rear left": called when the rear left bursts.
-- "burst rear right": called when the rear right bursts.
-- "burst front left": called when the front left bursts.
-- "burst front right": called when the front right bursts.
-- "penalty maybe cut": called when a 5-15 second penalty happens.
-- "penalty maybe big reset": called when the vehicle is likely reset and a penalty between 15 and 85 seconds is applied. Note that the game has several issues with vehicle resets, penalties and when the game state is updated so this behavior is approximate.
-- "penalty maybe tire repair": called when called when the vehicle is likely reset and a penalty greater than 85 seconds is applied. Note that the game has several issues with vehicle resets, penalties and when the game state is updated so this behavior is approximate.
-
-When the above penalty times trigger they may also create a scenario where the notes are repeated, if this occurs the codriver will say "repeating" and then repeat notes for corners not yet reached based on the reset position.
-
-In addition to the tire puncture and burst calls there are also dynamic filler samples that you can add. These calls are randomly included at a rate currently 20%. Currently supported are two prefixes:
-
-- pre-filler: possibly called before a note entry
-- post-filler: possibly called after a note entry
-
-Additional fixed point calls:
-
-- pre-stage: called before a stage
-- post-stage: called after a stage
-
-### naming convention
-
-Co driver call files are named with the following convention.
-
-```PHRASE-(ANYTHING YOU WANT).mp3```
-
-Where `PHRASE` is a phrase that is used in the pacenots. For instance the call file `and acute hairpin right-123-2.mp3` has the `PHRASE` "and acute hairpin right" meaning that in the pacenotes the phrase "and acute hairpin right" will potentially use this file when that call comes up. Everything after the `-` will be essentially ignored and can be whatever is helpful for your naming convention. When the mod needs to pick a sound file any file matching the `PHRASE` for the currently selected co-driver will be picked at random.
-
-### file formats
-
-mp3 files should be 44.1k stereo samples.
 
 # Bugs!
 
@@ -240,6 +206,12 @@ I'm sure there are bugs in the pacenote and codriver mod as well as innaccuracie
 
 For the co-drivers the audio is all generated with AI and it is generally not great quality but with some curation and cleanup I've been able to create a subset that seems passable. These certainly need more work but I wanted to share this system earlier rather than later so that others can start contributing improvements or their own pacenotes and co-drivers.
 
-# Help
+# Help & Troubleshooting
+
+## Common Issues
+- **No audio?** Ensure `zendrive.exe` is in the same directory as the `codrivers` and `pacenotes` folders.
+- **Notes not updating?** Double-check your `config.json` for syntax errors (missing commas) and ensure you restarted the game after saving.
+- **UI issues?** If the window is not appearing, check if it's hidden behind other windows or off-screen.
 
 Feel free to create issues or pull requests for any issues you find. Also if you struggle through something and find a solution please make sure to share the details somehow; I'm sure it will help someone else.
+
