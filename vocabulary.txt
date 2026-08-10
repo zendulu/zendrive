@@ -1,3 +1,5 @@
+10
+20
 30
 40
 50
@@ -37,58 +39,178 @@
 550
 600
 1000
+a bit
+acute
 acute hairpin left
 acute hairpin right
+after
 and
+around
 around bale
 around bales
 around roundabout
 around sign
 around tree
+at
+at bale
+at bridge
 at bush
+at crest
+at entry
+at exit
 at fence
+at gate
 at house
 at junction
+at log
+at logs
+at post
+at rock
+at sign
+at tape
 at tree
+at trees
+at wall
+bad
 bad bump
+bad bump dip
+bad bumps
+bad bumps dips
+bad camber
 bad dip
+bad squash
 bale
+bale inside
+bale outside
+bales
+be brave
+big
 big crest
 big cut
+big dab
 big jump
+black ice
+blind
+bloody long
+boulder
 brake
 bridge
+brow
 bump
+bump dip
+bump dips
 bumps
+bumps over
 bumpy
+bumpy braking
+burst front left
+burst front right
+burst rear left
+burst rear right
+bush
+camber
 care
+care in
+care out
 caution
+chicane
+clip
+cobbles
+continues
+continues over brow
+continues over crest
+continues over small crest
+cramped
 crest
+crest dab
+crest to left
+crest to right
+curb
+curve
 cut
+dab
+danger
+dangerous
+deceptive
+deep ruts
 dip
-don't cut
+dips
+dirt
+dirty
+done
+dont cut
+dont cut early
+dont cut late
+double
 double caution
+double crest
+double dont cut
+double jump
+down
 downhill
+drops
+drops left
+drops right
 dry now
 early
+early cut
+easy
+eight
 extra long
+fence
+fence inside
+fence outside
 finish
+five
 five left
+five left plus
 five left sharp
+five plus
 five right
+five right plus
 five right sharp
+flat
+flat jump
+four
 four left
+four left plus
 four left sharp
+four parts
+four plus
 four right
+four right plus
 four right sharp
+from left
+from right
+fucking long
+full cut
+gets rougher
+gets slower
+go
+go straight
 good luck
 gravel
-handbrake
+grip in
+grip middle
+grip out
+guardrail outside
+hairpin
 hairpin left
+hairpin left plus
 hairpin right
+hairpin right plus
 half long
+hand brake
+hard
 hold
+hole
+hook
+hug
+ice
 ice now
+icy
+important
+in
 into
 into big crest
 into bridge
@@ -100,7 +222,10 @@ into jump
 into small crest
 into small jump
 into stop
+island
 jump
+jump dab
+jump maybe
 jumps
 junction
 keep in
@@ -108,107 +233,273 @@ keep left
 keep middle
 keep out
 keep right
+kind
 late
+late cut
 left
+left around
 left entry chicane
+left into
+left over
+leftish
+line
+log
+log inside
+log outside
+logs
 logs inside
 logs outside
 long
+long long
+mast
+maybe slippy
+minus
+narrow
+narrow bridge
 narrows
 neat
 negative camber
+nine
+one
 one left
 one left sharp
+one plus
 one right
 one right sharp
+onto bridge
 onto cobbles
+onto finish
 onto gravel
+onto ice
+onto next lap
+onto small road
+onto snow
 onto tarmac
+onto wider
 open hairpin left
 open hairpin right
 opens
 opens and tightens
+opens early
 opens five
+opens five plus
 opens four
+opens four plus
+opens fucking long
+opens half long
+opens late
+opens long
+opens long long
+opens one
+opens one plus
+opens open hairpin
+opens over crest
+opens round
+opens sharp
 opens six
+opens square
+opens square plus
 opens three
+opens three plus
 opens two
+opens two plus
+opens very long
+opens very very long
+out
+over
 over big crest
 over big jump
 over bridge
+over brow
 over bump
 over bumps
 over crest
+over crest long
+over crests
+over early and late crest
 over finish
 over jump
+over jump dab
+over jump maybe
 over jumps
+over rails
+over rocks
 over small crest
 over small jump
 past junction
 patchy now
+patient
+plus
+post
+post early
+post inside
+post late
 post outside
+posts
+precise
+puncture front left
+puncture front right
+puncture rear left
+puncture rear right
+rails
+remember
+repeating
 right
+right around
+right entry
 right entry chicane
+right into
+right over
+rightish
+rock
 rock inside
 rock outside
+rocks
+rocks inside
+rocks outside
+rotate
 rough
+round
+roundabout
+rut
+ruts
+seven
 sharp
 sharp jump
 short
+sign
+sign inside
+sign outside
+silence
+six
 six left
 six left sharp
 six right
 six right sharp
 slight left
 slight right
+slippy
+slippy braking
+slippy exit
+slow
 slowing
+small
 small crest
 small cut
+small dab
 small jump
+small squash
+speed bump
+square
 square left
 square left sharp
+square plus
 square right
 square right sharp
+squash
 starts
+steep incline
+stone
+stone inside
+stone outside
+stop
 straight
 stump inside
-sudden
+surface
+tarmac
+three
 three left
+three left plus
 three left sharp
+three parts
+three plus
 three right
+three right plus
 three right sharp
 through dip
 through gate
 through junction
 through posts
 through tunnel
+throws
+tight
 tightens
+tightens acute
+tightens a bit
 tightens and opens
+tightens at junction
+tightens bad squash
+tightens early
 tightens five
+tightens five plus
 tightens four
+tightens four plus
+tightens fucking long
 tightens hairpin
+tightens half long
+tightens late
+tightens long
+tightens long long
 tightens one
+tightens one plus
 tightens open hairpin
+tightens over crest
+tightens round
+tightens sharp
 tightens six
+tightens small squash
 tightens square
+tightens square plus
+tightens squash
 tightens three
+tightens three plus
 tightens three sharp
 tightens two
+tightens two plus
+tightens very long
+tightens very very long
+tires
+tires inside
+tires outside
+to finish
 to stop
+tree
+tree inside
+tree outside
+trees
+triple
 triple caution
+triple dont cut
+trust
 turn
 turn early
 turn late
 twisty
+twist from left
+twist from right
+two
+two bales
 two left
+two left plus
 two left sharp
+two parts
+two plus
 two right
+two right plus
 two right sharp
 unseen
 unseen late
+up
 uphill
+very
 very long
+very very long
+very short
+very slippy
 wall inside
 wall outside
 water splash
+well
+well done
 widens
+wide out
