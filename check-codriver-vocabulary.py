@@ -73,9 +73,7 @@ def main():
     codrivers = get_codrivers()
     print(codrivers);
 
-    vocabulary = []
-    vocabulary += get_vocabulary('./vocabulary.txt')
-    vocabulary += get_vocabulary('./vocabulary-supplemental.txt')
+    vocabulary = get_vocabulary('./vocabulary.txt')
 
     for codriver in codrivers:
         print(f">>> {codriver}:")

@@ -38,7 +38,7 @@ JSON is extremely strict. A single missing character can prevent the mod from lo
 A co-driver is simply a folder of MP3 files named after the phrases they use.
 
 ### Co-driver Creation Checklist
-- [ ] **Review Vocabulary**: Check [./vocabulary.txt](vocabulary.txt) for the 193 required phrases and [./vocabulary-supplemental.txt](vocabulary-supplemental.txt) for optional ones.
+- [ ] **Review Vocabulary**: Check [./vocabulary.txt](vocabulary.txt) for the 505 phrases.
 - [ ] **Prepare Audio**: Create MP3 files.
     - **Format**: 44.1kHz, Stereo.
 - [ ] **Name Files**: Use the `PHRASE-suffix.mp3` convention.
