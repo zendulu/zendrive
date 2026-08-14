@@ -24,6 +24,7 @@ Review the Jannemod V3 scales as linked to from the ![Jannemod v3 Complete versi
 Known issues:
 - No start audio. Either turn on the 3-2-1 overlay or watch the stage clock.
 - Some clumsy/incomplete mapping to the visual pacenotes. There are a lot of new notes, they mostly work but a few stages have a lot of standalone minimal information visal pacenotes.
+- "well done" is said prematurely make sure  you cross the finish
 
 
 ### EA WRC Telemetry Setup
