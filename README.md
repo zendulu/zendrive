@@ -17,13 +17,11 @@ If you already use Edge, Chromium, or any modern browser, WebView2 is almost cer
 
 ### RBR Telemetry Setup
 
-Just add 127.0.0.1:20667 in RSF RBR launcher.
-This currently only works if Richard Burns Rally is installed in `C:\Richard Burns Rally` Feel free to open an issue if you can't get it working the details in `zendrive_debug.log` (created in the same directory of zendrive) might have valuaable information. Please review the contents before sharing; there shouldn't be anything sensitive in their but file paths might be exposed.
+No setup necessary, if you previously set UDP you can remove that now.
 
 Review the Jannemod V3 scales as linked to from the ![Jannemod v3 Complete version](https://www.youtube.com/watch?v=jlnJO9pxk4s) this codriver system is aiming to be something that is intuitive and unsurprising for drivers familiar with EA Sports WRC or Dirt Rally 2.0 pacenote systems. To me that seems like a combination of numeric B, and Hybrid G. I'm still dialing in the turn scales especially around hairpins, squares, and ones. I'm not yet satisfied with where it's at so things will shift a bit. I'm also assuming that Luppi's V3 notes are installed. Those seem to be quite good to me, if they feel off it's because I've likely mapped some turns poorly. Feel free to open an issues and flag which stage and turn marker was off.
 
 Known issues:
-- The pacenotes linger onscreen after stage. I'm still working out how to better detect when on stage versus after.
 - No start audio. Either turn on the 3-2-1 overlay or watch the stage clock.
 - Some clumsy/incomplete mapping to the visual pacenotes. There are a lot of new notes, they mostly work but a few stages have a lot of standalone minimal information visal pacenotes.
 
