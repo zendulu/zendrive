@@ -1,7 +1,4 @@
 [
-  [0, ["starts"]],
-  [0, ["40", "five right"]],
-  [0, ["good luck"]],
   [1, ["40"]],
   [37, ["five right", "opens"]],
   [147, ["and", "slight left", "100"]],
@@ -108,7 +105,6 @@
   [8150, ["turn", "square right", "40"]],
   [8205, ["five left"]],
   [8205, ["over finish"]],
-  [8205, ["into"]],
-  [8205, ["five right"]],
+  [8205, ["into", "five right"]],
   [8205, ["to stop"]]
 ]

@@ -1,7 +1,4 @@
 [
-  [0, ["starts"]],
-  [0, ["three right"]],
-  [0, ["good luck"]],
   [1, ["turn", "three right"]],
   [26, ["three left", "40"]],
   [108, ["late", "hairpin right", "over crest"]],

@@ -1,7 +1,4 @@
 [
-  [0, ["starts"]],
-  [0, ["180"]],
-  [0, ["good luck"]],
   [1, ["180", "past junction"]],
   [190, ["crest", "160", "slowing"]],
   [370, ["turn", "two right", "half long", "onto gravel", "70"]],

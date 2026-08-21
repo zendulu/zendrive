@@ -1,7 +1,4 @@
 [
-  [0, ["starts"]],
-  [0, ["five left", "five right"]],
-  [0, ["good luck"]],
   [1, ["five left", "over crest", "don't cut"]],
   [122, ["into", "five right", "short", "70"]],
   [230, ["four left", "short", "60"]],

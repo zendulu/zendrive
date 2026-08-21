@@ -1,7 +1,4 @@
 [
-  [0, ["starts"]],
-  [0, ["six left"]],
-  [0, ["good luck"]],
   [1, ["six left", "over crest", "very long", "tightens", "50"]],
   [278, ["caution", "late", "square right", "40"]],
   [339, ["six left"]],
@@ -138,7 +135,6 @@
   [10206, ["turn", "square left", "60"]],
   [10268, ["five right"]],
   [10268, ["over finish"]],
-  [10268, ["into"]],
-  [10268, ["two left"]],
+  [10268, ["into", "two left"]],
   [10268, ["to stop"]]
 ]

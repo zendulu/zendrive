@@ -1,7 +1,4 @@
 [
-  [0, ["starts"]],
-  [0, ["60", "hairpin left"]],
-  [0, ["good luck"]],
   [1, ["60"]],
   [66, ["turn", "hairpin left", "30"]],
   [123, ["late", "hairpin right", "don't cut"]],

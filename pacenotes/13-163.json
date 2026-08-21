@@ -1,7 +1,4 @@
 [
-  [0, ["starts"]],
-  [0, ["slight right", "60"]],
-  [0, ["good luck"]],
   [1, ["slight right", "60"]],
   [89, ["slight left", "50"]],
   [235, ["slowing", "slight right"]],
@@ -132,7 +129,6 @@
   [7758, ["into", "six left", "50"]],
   [7847, ["left", "over crest"]],
   [7847, ["finish"]],
-  [7847, ["and"]],
-  [7847, ["four left"]],
+  [7847, ["and", "four left"]],
   [7847, ["to stop"]]
 ]

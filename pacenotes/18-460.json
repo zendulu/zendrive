@@ -1,7 +1,4 @@
 [
-  [0, ["starts"]],
-  [0, ["six left"]],
-  [0, ["good luck"]],
   [1, ["six left", "extra long", "150"]],
   [330, ["slowing", "turn", "square right"]],
   [388, ["and", "left", "over small crest", "180"]],

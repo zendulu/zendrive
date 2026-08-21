@@ -1,7 +1,4 @@
 [
-  [0, ["starts"]],
-  [0, ["square right"]],
-  [0, ["good luck"]],
   [1, ["turn", "square right"]],
   [19, ["into", "square left", "tightens"]],
   [59, ["and", "two right", "short", "30"]],

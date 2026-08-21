@@ -1,7 +1,4 @@
 [
-  [0, ["starts"]],
-  [0, ["one right"]],
-  [0, ["good luck"]],
   [1, ["late", "one right", "half long", "30"]],
   [83, ["five left", "extra long"]],
   [223, ["and", "two left", "tightens"]],

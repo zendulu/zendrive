@@ -1,7 +1,4 @@
 [
-  [0, ["starts"]],
-  [0, ["late", "four right", "five left"]],
-  [0, ["good luck"]],
   [1, ["late", "four right", "past junction"]],
   [69, ["and", "five left", "30"]],
   [142, ["five left", "don't cut"]],

@@ -1,7 +1,4 @@
 [
-  [0, ["starts"]],
-  [0, ["100"]],
-  [0, ["good luck"]],
   [1, ["100"]],
   [120, ["turn", "square right", "opens and tightens", "onto gravel"]],
   [186, ["and", "five left", "tightens", "half long"]],

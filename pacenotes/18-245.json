@@ -1,7 +1,4 @@
 [
-  [0, ["starts"]],
-  [0, ["six left", "60"]],
-  [0, ["good luck"]],
   [1, ["six left", "60"]],
   [98, ["two right sharp", "at junction"]],
   [158, ["and", "crest"]],
@@ -62,7 +59,6 @@
   [4739, ["turn", "square right", "40"]],
   [4795, ["five left"]],
   [4795, ["over finish"]],
-  [4795, ["into"]],
-  [4795, ["five right"]],
+  [4795, ["into", "five right"]],
   [4795, ["to stop"]]
 ]

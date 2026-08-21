@@ -1,7 +1,4 @@
 [
-  [0, ["starts"]],
-  [0, ["slight left", "150"]],
-  [0, ["good luck"]],
   [1, ["slight left", "150", "slowing"]],
   [164, ["slight right", "don't cut", "40"]],
   [239, ["turn", "square left", "30"]],
@@ -87,7 +84,7 @@
   [7993, ["four right", "short", "bumpy", "190"]],
   [8239, ["late", "three left", "keep in", "120"]],
   [8399, ["turn", "one right", "rock inside", "600"]],
-  [8895, ["caution", "chris pine"], {"easter": true}]
+  [8895, ["caution", "chris pine"], {"easter": true}],
   [8992, ["caution", "six right", "over crest"]],
   [9034, ["into", "five left", "short", "over bump", "170"]],
   [9237, ["double caution", "turn", "six right"]],

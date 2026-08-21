@@ -1,7 +1,4 @@
 [
-  [0, ["starts"]],
-  [0, ["caution", "crest", "five right"]],
-  [0, ["good luck"]],
   [1, ["caution", "crest"]],
   [51, ["into", "five right"]],
   [74, ["five left", "short"]],
