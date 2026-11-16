@@ -1,0 +1,6 @@
+pacenotes
+check-codriver-vocabulary.py
+README.md
+vocabulary.txt
+wrc_zen.json
+zendrive.exe

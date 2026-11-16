@@ -7,6 +7,15 @@ This is a custom mod for EA Sports WRC to let you edit the pacenotes as well as 
 
 ## Setup
 
+### Installation
+
+Releases ship as two archives. Unpack both into the same folder:
+
+- `zendrive-v<version>.zip` — the mod: `zendrive.exe`, `pacenotes/`, and config files.
+- `codrivers-v<version>.zip` — the co-driver voice packs (`codrivers/`).
+
+The mod scans the `codrivers` folder next to `zendrive.exe`, so keep both archives in one directory.
+
 ### WebView2 Runtime (Windows)
 
 The new version renders its UI using Microsoft WebView2 — the same engine that powers Microsoft Edge. Most Windows 10/11 machines already have WebView2 installed. If you get an error about a missing runtime when launching Zendrive, install it:
